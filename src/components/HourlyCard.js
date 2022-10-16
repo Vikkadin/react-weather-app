@@ -1,17 +1,21 @@
 import React from 'react'
+import { iconUrlFromCode } from '../ApiService'
 import styles from '../css/HourlyCard.module.css'
 
 
-function Hourly() {
+function Hourly({ items }) {
     return (
         <div>
-            <ul className={styles.hourlyitems}>
-                <li className={styles.hourlytemp}> 17°</li>
-                <li className={styles.hourlyicon}>
-                    <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="weather details" />
-                </li>
-                <li className={styles.hourlytime}>3:00 PM</li>
-            </ul>
+            {items.map((item, index) => (
+                <ul key={index} className={styles.hourlyitems}>
+                    <li className={styles.hourlytemp}>{`${item.temp.toFixed()}°`}</li>
+                    <li className={styles.hourlyicon}>
+                        <img src={iconUrlFromCode(item.icon)} alt="wether ditails" />
+                    </li>
+                    <li className={styles.hourlytime}>{item.title}</li>
+                </ul>
+            ))
+            }
         </div>
     );
 }

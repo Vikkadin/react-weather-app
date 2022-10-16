@@ -1,17 +1,21 @@
 import React from 'react'
+import { iconUrlFromCode } from '../ApiService'
 import styles from '../css/DailyCard.module.css'
 
 
-function Daily() {
+function Daily({ items }) {
     return (
         <div>
-            <ul className={styles.dailyitems}>
-                <li className={styles.dailytemp}>18°</li>
-                <li className={styles.dailyicon}>
-                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather details" />
-                </li>
-                <li className={styles.dailyday}>Sun</li>
-            </ul>
+            {items.map((item, index) => (
+                <ul key={index} className={styles.dailyitems}>
+                    <li className={styles.dailytemp}>{`${item.temp.toFixed()}°`}</li>
+                    <li className={styles.dailyicon}>
+                        <img src={iconUrlFromCode(item.icon)} alt="wether ditails" />
+                    </li>
+                    <li className={styles.dailyday}>{item.title}</li>
+                </ul>
+            ))
+            }
         </div>
     );
 }
