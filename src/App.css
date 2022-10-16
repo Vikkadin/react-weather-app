@@ -173,6 +173,10 @@ h2 {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .logo {
     font-size: 1.25rem;
   }
