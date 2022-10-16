@@ -24,11 +24,10 @@ function App() {
           </div>
         </div>
         <div className="info-container">
-          <Navigation />
+          {/* <Navigation /> */}
           <div>
             <h1>Current Weather</h1>
             <ForecastCard />
-            <ApiService />
             <h2 className="title">Hourly / Daily</h2>
             <div className="summary">
               <DailyCard />

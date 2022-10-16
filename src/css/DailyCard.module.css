@@ -1,0 +1,30 @@
+.dailyitems {
+    padding: 5%;
+}
+
+.dailyitems>li {
+    padding-bottom: 10%;
+}
+
+.dailytemp {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent);
+    text-align: center;
+}
+
+.dailyicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dailyicon>img {
+    width: 70%;
+}
+
+.dailyday {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}

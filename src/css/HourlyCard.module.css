@@ -1,0 +1,29 @@
+.hourlyitems {
+    padding: 5%;
+}
+
+.hourlyitems>li {
+    padding-bottom: 10%;
+}
+
+.hourlytemp {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent);
+    text-align: center;
+}
+
+.hourlyicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hourlyicon>img {
+    width: 70%;
+}
+
+.hourlytime {
+    text-align: center;
+    font-weight: bold;
+}

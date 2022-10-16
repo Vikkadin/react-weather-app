@@ -1,0 +1,22 @@
+.localdata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.city,
+.localtime {
+    text-align: center;
+    background-color: var(--inputColor);
+    padding: 20px 28px;
+    border-radius: 3rem;
+    font-weight: bold;
+    margin-bottom: 8%;
+
+}
+
+.city {
+    font-size: 1.3rem;
+    color: var(--accent);
+}

@@ -1,0 +1,58 @@
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: var(--cardColor);
+    box-shadow: var(--profileShadow);
+    border-radius: 3rem;
+    margin: 1rem;
+    padding: 7%;
+}
+
+.mainforecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    padding-left: 10%;
+    font-size: 2rem;
+}
+
+.celsius {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #207E77;
+}
+
+.mainicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainicon>img {
+    width: 90%;
+}
+
+.des {
+    text-transform: uppercase;
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.moreinfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    gap: 0.75rem;
+    padding-right: 10%;
+    font-size: 1.5rem;
+}
+
+.icons {
+    padding-right: 5px;
+    width: 60px;
+}
