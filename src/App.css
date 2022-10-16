@@ -201,7 +201,7 @@ h2 {
     display: grid;
     grid-template-columns: 99%;
     overflow: auto;
-    padding: 0%;
+    padding: 1%;
   }
 
   .content::-webkit-scrollbar {
