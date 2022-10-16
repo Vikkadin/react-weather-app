@@ -54,3 +54,34 @@
     width: 30px;
     height: 30px;
 }
+
+@media only screen and (max-width: 1024px) {
+    .searchbar {
+        display: flex;
+        width: 120%;
+        padding-bottom: 10%;
+    }
+
+    .searchbar>input {
+        padding: 7%;
+        font-size: 1.25rem;
+        height: 44px;
+    }
+
+    .sicon>svg,
+    .licon>svg {
+        color: var(--cardColor);
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .searchbar {
+        display: flex;
+        width: 130%;
+        padding-bottom: 10%;
+    }
+
+}

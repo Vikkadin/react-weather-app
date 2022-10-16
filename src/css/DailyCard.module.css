@@ -28,3 +28,13 @@
     text-align: center;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 1024px) {
+    .dailyitems {
+        padding: 2%;
+    }
+
+    .dailyday {
+        font-size: 0.8em;
+    }
+}

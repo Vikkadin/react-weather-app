@@ -122,3 +122,112 @@ h2 {
 .title {
   margin-top: 3rem;
 }
+
+@media only screen and (max-width: 1440px) {
+
+  h1,
+  h2 {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .content {
+    display: grid;
+    grid-template-columns: 99%;
+    overflow: auto;
+    font-size: 1.5rem;
+  }
+
+  .content::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+  }
+
+  .form-container {
+    gap: 1rem;
+    border-radius: 3rem 3rem 0 0;
+    margin-bottom: 0px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .city {
+    font-size: 1.25rem;
+  }
+
+  .search h2 {
+    font-size: 1.75rem;
+  }
+
+  .info-container {
+    margin-top: 0px;
+    border-radius: 0 0 3rem 3rem;
+  }
+
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .city {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    margin-top: 3%;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .content {
+    display: grid;
+    grid-template-columns: 99%;
+    overflow: auto;
+    padding: 1%;
+  }
+
+  .content::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+  }
+
+  .logo {
+    font-size: 0.95rem;
+  }
+
+  .city {
+    font-size: 0.95rem;
+  }
+
+  .search h2 {
+    font-size: 1rem;
+    margin-top: 2%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-container {
+    gap: 0.5rem;
+  }
+
+  .info-container {
+    padding: 1%;
+  }
+
+  .info-container h2 {
+    margin-top: 2%;
+  }
+}

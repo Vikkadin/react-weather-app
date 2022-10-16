@@ -20,3 +20,11 @@
     font-size: 1.3rem;
     color: var(--accent);
 }
+
+@media only screen and (max-width: 480px) {
+
+    .city,
+    .localtime {
+        padding: 10px 16px;
+    }
+}
