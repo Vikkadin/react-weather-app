@@ -164,8 +164,8 @@ h2 {
   .info-container {
     margin-top: 0px;
     border-radius: 0 0 3rem 3rem;
+    padding: 0.6em;
   }
-
 
   h1 {
     font-size: 1.8rem;
@@ -185,15 +185,19 @@ h2 {
     font-size: 1.1rem;
     margin-top: 3%;
   }
+
+  .info-container {
+    padding: 0.4em;
+  }
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 520px) {
   .content {
     display: grid;
     grid-template-columns: 99%;
     overflow: auto;
-    padding: 1%;
+    padding: 0%;
   }
 
   .content::-webkit-scrollbar {
