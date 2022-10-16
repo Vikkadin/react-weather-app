@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import TimeAndLocation from './components/TimeAndLocation';
 import Form from './components/Form'
-// import Navigation from './components/Form'
+import Navigation from './components/Navigation'
 import ForecastCard from './components/ForecastCard'
 import DailyCard from './components/DailyCard'
 import HourlyCard from './components/HourlyCard'
@@ -41,14 +41,17 @@ function App() {
           </div>
         </div>
         <div className="info-container">
+          <Navigation setQuery={setQuery} units={units} setUnits={setUnits} />
           {weather && (
             <div>
               <h1>Current Weather</h1>
               <ForecastCard weather={weather} />
               <h2 className="title">Hourly / Daily</h2>
               <div className="summary">
-                <DailyCard items={weather.daily} />
-                <HourlyCard items={weather.hourly} />
+                <Routes>
+                  <Route path="/daily" element={<DailyCard items={weather.daily} />} />
+                  <Route path="/hourly" element={<HourlyCard items={weather.hourly} />} />
+                </Routes>
               </div>
             </div>
           )}
