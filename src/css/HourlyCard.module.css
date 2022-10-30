@@ -1,5 +1,5 @@
 .hourlyitems {
-    padding: 5%;
+    margin-bottom: 5%;
     text-align: center;
 }
 
@@ -39,6 +39,7 @@
 
 .hourytitle {
     margin-top: 3%;
+    margin-bottom: 3%;
     display: block;
     width: 100%;
 }
