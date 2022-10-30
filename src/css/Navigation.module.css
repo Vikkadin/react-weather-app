@@ -63,6 +63,7 @@
 @media only screen and (max-width: 520px) {
     .navitem {
         font-size: 1.2rem;
+        margin-right: 20px;
     }
 
     .navitem {
