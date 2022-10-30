@@ -5,7 +5,10 @@ import styles from '../css/HourlyCard.module.css'
 
 function Hourly({ items }) {
     return (
-        <div>
+        <div className={styles.hourlycard}>
+            <div className={styles.hourytitle}>
+                <h2>Hourly Forecast</h2>
+            </div>
             {items.map((item, index) => (
                 <ul key={index} className={styles.hourlyitems}>
                     <li className={styles.hourlytemp}>{`${item.temp.toFixed()}°`}</li>

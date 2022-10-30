@@ -10,10 +10,6 @@ function Navigation({ units, setUnits }) {
         if (units !== selectedUnit) setUnits(selectedUnit);
     };
 
-    const refreshPage = () => {
-        window.location.reload();
-    }
-
     function CustomLink({ to, children, ...props }) {
         const resolvedPath = useResolvedPath(to)
         const isActive = useMatch({ path: resolvedPath.pathname, end: true })
@@ -54,12 +50,6 @@ function Navigation({ units, setUnits }) {
                     to="/hourly"
                     className={styles.navitem}
                 >Hourly</CustomLink>
-            </div>
-            <div>
-                <Link
-                    className={styles.navitem}
-                    onClick={refreshPage}
-                >Refresh</Link>
             </div>
         </nav>
     )

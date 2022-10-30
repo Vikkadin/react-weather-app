@@ -5,7 +5,10 @@ import styles from '../css/DailyCard.module.css'
 
 function Daily({ items }) {
     return (
-        <div>
+        <div className={styles.dailycard}>
+            <div className={styles.dailytitle}>
+                <h2>Daily Forecast</h2>
+            </div>
             {items.map((item, index) => (
                 <ul key={index} className={styles.dailyitems}>
                     <li className={styles.dailytemp}>{`${item.temp.toFixed()}°`}</li>
@@ -16,7 +19,7 @@ function Daily({ items }) {
                 </ul>
             ))
             }
-        </div>
+        </div >
     );
 }
 

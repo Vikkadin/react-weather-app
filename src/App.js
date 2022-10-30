@@ -46,7 +46,6 @@ function App() {
             <div>
               <h1>Current Weather</h1>
               <ForecastCard weather={weather} />
-              <h2 className="title">Hourly / Daily</h2>
               <div className="summary">
                 <Routes>
                   <Route path="/daily" element={<DailyCard items={weather.daily} />} />

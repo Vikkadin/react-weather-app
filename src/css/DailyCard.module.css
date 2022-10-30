@@ -1,5 +1,6 @@
 .dailyitems {
     padding: 5%;
+    text-align: center;
 }
 
 .dailyitems>li {
@@ -24,14 +25,27 @@
 }
 
 .dailyday {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
 }
 
+.dailycard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+.dailytitle {
+    margin-top: 3%;
+    display: block;
+    width: 100%;
+}
+
 @media only screen and (max-width: 1024px) {
     .dailyitems {
-        padding: 2%;
+        padding-top: 5%;
     }
 
     .dailyday {

@@ -1,5 +1,6 @@
 .hourlyitems {
     padding: 5%;
+    text-align: center;
 }
 
 .hourlyitems>li {
@@ -24,11 +25,29 @@
 }
 
 .hourlytime {
+    font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
 }
 
+.hourlycard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+.hourytitle {
+    margin-top: 3%;
+    display: block;
+    width: 100%;
+}
+
 @media only screen and (max-width: 1024px) {
+    .hourlyitems {
+        padding: 2%;
+    }
+
     .hourlytime {
         font-size: 0.8em;
     }
